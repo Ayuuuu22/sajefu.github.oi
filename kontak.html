@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak - SAJEFU HOTEL</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f6f6f6;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #1a237e;
+    }
+
+    .info {
+      margin-bottom: 30px;
+    }
+
+    .info p {
+      margin: 8px 0;
+      line-height: 1.6;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background-color: #1a237e;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .confirmation {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #e0f7fa;
+      border: 1px solid #26c6da;
+      border-radius: 5px;
+      color: #006064;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      padding: 15px;
+      background-color: #1a237e;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SAJEFU HOTEL</h1>
+  <p>Hubungi Kami</p>
+</header>
+
+<div class="container">
+  <h2>Kontak Kami</h2>
+  <div class="info">
+    <p><strong>📍 Alamat:</strong> Jl. SS (sotek & sepan) city,Kalimantan Timur</p>
+    <p><strong>📞 Telepon:</strong> (021) 123-4567</p>
+    <p><strong>📧 Email:</strong> @sajefuhotel.com</p>
+    <p><strong>🕒 Jam Operasional:</strong> Setiap Hari, 24 Jam</p>
+  </div>
+
+  <h3>ULASAN ANDA</h3>
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak SAJEFU HOTEL</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #002b5c;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 3px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background-color: #002b5c;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .confirmation {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #e0f7fa;
+      border: 1px solid #26c6da;
+      border-radius: 5px;
+      color: #006064;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Form Kontak SAJEFU HOTEL</h2>
+
+  <form id="formPesan">
+    <table>
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Email</th>
+          <th>Pesan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" id="nama" required></td>
+          <td><input type="email" id="email" required></td>
+          <td><textarea id="pesan" rows="3" required></textarea></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button type="submit">Kirim Pesan</button>
+  </form>
+
+  <div class="confirmation" id="confirmationBox"></div>
+</div>
+
+<script>
+  const form = document.getElementById("formPesan");
+  const confirmation = document.getElementById("confirmationBox");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const nama = document.getElementById("nama").value;
+    const email = document.getElementById("email").value;
+    const pesan = document.getElementById("pesan").value;
+
+    confirmation.style.display = "block";
+    confirmation.innerHTML = `
+      <strong>Terima kasih, ${nama}!</strong><br />
+      Pesan kamu telah dikirim ke SAJEFU HOTEL.<br/>
+      Kami akan membalas ke email: <b>${email}</b><br/>
+      Isi pesan: <em>${pesan}</em>
+    `;
+
+    form.reset();
+  });
+</script>
+
+<section>
+    <div class="right-bottom-text">
+  <a href="beranda.html"> -BERANDA</a> 
+
+
+</body>
+</html>
